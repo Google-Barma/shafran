@@ -1,0 +1,21 @@
+.about {
+  &__list {
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__img {
+    margin-bottom: 15px;
+  }
+
+  &__subscription {
+  }
+}
