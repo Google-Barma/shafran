@@ -21,14 +21,14 @@
     &:hover .our-menu__img {
       transform: scale(1.1);
     }
+
+    &:hover .our-menu__icon-wrapper {
+      background-color: #ffe745;
+    }
   }
 
   &__subtitle {
-    position: absolute;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   &__img {
@@ -37,8 +37,42 @@
   }
   &__img-overlay {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #6146b6;
+    border: 5px solid rgba(255, 255, 255, 0.55);
+    background-clip: padding-box;
+    margin: 0 0 30px 0;
+  }
+
+  &__icon {
+    position: relative;
+    fill: rgb(255, 255, 255);
+    width: 100px;
+  }
+
+  &__icon--salad {
+    left: 7px;
+  }
+
+  &__icon--burger {
+    bottom: 5px;
+    width: 90px;
+    height: 90px;
   }
 }
