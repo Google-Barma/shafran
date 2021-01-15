@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"0HMw":function(i,o,e){},QfWi:function(i,o,e){"use strict";e.r(o);e("0HMw");var n=e("Mfn4");e("16fh"),new n.a(".swiper-container",{direction:"horizontal",loop:!0,pagination:{el:".swiper-pagination"},scrollbar:{el:".swiper-scrollbar"},effect:"fade",grabCursor:!0,speed:400,followFinger:!0,watchSlidesProgress:!0})}},[["QfWi",1,2]]]);
-//# sourceMappingURL=main.f6238e82fa7cdf282f28.js.map
