@@ -3,6 +3,22 @@
   }
 
   &__list {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr);
+      grid-grap: 20px;
+
+      margin: 0 auto;
+      max-width: 830px;
+    }
+
+    @media (min-width: 1180px) {
+      grid-template-columns: minmax(280px, 1fr) minmax(280px, 1fr) minmax(
+          280px,
+          1fr
+        );
+      max-width: 1280px;
+    }
   }
 
   &__item {
@@ -11,6 +27,7 @@
     overflow: hidden;
     max-width: 370px;
     margin: 0 auto;
+    border-radius: 5px;
 
     cursor: pointer;
 

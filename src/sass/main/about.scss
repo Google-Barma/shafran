@@ -1,8 +1,21 @@
 .about {
   &__list {
     margin: 0 auto;
-  }
+    max-width: 767px;
+    text-align: right;
 
+    @media (min-width: 700px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(280px, 1fr));
+      grid-gap: 20px;
+
+      max-width: 1280px;
+    }
+
+    @media (min-width: 1180px) {
+      grid-template-columns: repeat(3, minmax(280px, 1fr));
+    }
+  }
   &__item {
     position: relative;
     margin: 0 auto;
@@ -12,15 +25,21 @@
     }
   }
 
-  &__title {
-    margin-bottom: 10px;
-  }
-
   &__img {
     margin: 0 auto 15px;
   }
 
+  &__text-block {
+    margin-right: 35px;
+  }
+
+  &__title {
+    font-size: 35px;
+  }
+
   &__subscription {
+    margin-right: 0;
+    font-size: 20px;
   }
 
   &__img-wrapper {
